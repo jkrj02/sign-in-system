@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Student {
+public class Activity {
 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Id

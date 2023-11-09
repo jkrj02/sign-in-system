@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 //数据库类
 @Repository
-public interface StudentRepository extends CrudRepository<Student, Integer> {
+public interface ActivityRepository extends CrudRepository<Student, Integer> {
 
 }

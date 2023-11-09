@@ -1,5 +1,6 @@
 package com.example.demo.response;
 
+//目前没用的文件
 public class ResponseCode {
 
 
