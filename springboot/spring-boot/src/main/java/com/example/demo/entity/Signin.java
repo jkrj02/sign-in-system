@@ -13,17 +13,14 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Leave {
+public class Signin {
 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Id
     @Column(name = "Id")
     private int Id;
-    private int studentId;
-    private boolean type ;
-    private String startTime;
-    private String endTime;
     private int activityId;
-
+    private int userId ;
+    private String signin;
 
 }

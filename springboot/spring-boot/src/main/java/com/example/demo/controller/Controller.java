@@ -1,7 +1,8 @@
 package com.example.demo.controller;
 
-import com.example.demo.entity.Activity;
-import com.example.demo.entity.Student;
+import com.example.demo.entity.*;
+
+
 import com.example.demo.service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ public class Controller {
     private final ClassroomService classroomService;
     private final LeaveService leaveService;
     private final ManagerService managerService;
-    private final SignInService signInService;
+    private final SigninService signinService;
     private final TeacherService teacherService;
     private final WeatherService weatherService;
 
@@ -75,10 +76,10 @@ public class Controller {
     {
         return managerService.getAllManagers();
     }
-    @GetMapping("signIn")
+    @GetMapping("signin")
     public Object sig()
     {
-        return signInService.getAllSignIns();
+        return signinService.getAllSignIns();
     }
     @GetMapping("teacher")
     public Object tea()
@@ -90,7 +91,17 @@ public class Controller {
     {
         return weatherService.getAllWeathers();
     }
-
+    @GetMapping("leave/add")
+    public Object leaveAdd()
+    {   Leaveinfo a=new Leaveinfo();
+        a.setActivityId(121);
+        a.setEndTime("2020/11/11");
+        a.setStudentId(112020);
+        a.setStartTime("2020/11/10");
+        a.setType(true);
+        a.setId(55);
+        return leaveService.addLeave(a);
+    }
     @GetMapping("student/add")
     public Object stuadd()
     {

@@ -2,7 +2,7 @@ spring:
   datasource:
     username: wang1
     password:
-    url: jdbc:mysql://10.62.160.133:3306/signin?useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://10.63.233.99:3306/signin?useSSL=false&serverTimezone=Asia/Shanghai
 
   jpa:
     properties:
