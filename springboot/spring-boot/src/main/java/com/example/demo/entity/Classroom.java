@@ -1,0 +1,25 @@
+package com.example.demo.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.*;
+
+//实体类
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Classroom {
+
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Id
+    @Column(name = "classroomId")
+    private int classroomId;
+    private int capacity;
+    private String name ;
+
+}
