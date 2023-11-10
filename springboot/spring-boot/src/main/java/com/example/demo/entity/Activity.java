@@ -17,13 +17,15 @@ public class Activity {
 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Id
-    @Column(name = "studentId")
-    private int studentId;
-    private String grade;
-    private String college ;
-    private String major;
-    private String gender;
+    @Column(name = "activityId")
+    private int activityId;
+    private int organizerId;
+    private String type ;
     private String name;
+    private String time;
+    private String endTime;
+    private int classroomId;
+    private String approved;
 
 
 }

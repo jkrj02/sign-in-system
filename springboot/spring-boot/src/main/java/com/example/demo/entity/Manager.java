@@ -15,15 +15,11 @@ import javax.persistence.*;
 @AllArgsConstructor
 public class Manager {
 
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+   // @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Id
-    @Column(name = "studentId")
-    private int studentId;
-    private String grade;
-    private String college ;
-    private String major;
-    private String gender;
-    private String name;
-
+    @Column(name = "managerId")
+    private int managerId;
+    private String college;
+    private String name ;
 
 }

@@ -17,13 +17,9 @@ public class Weather {
 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Id
-    @Column(name = "studentId")
-    private int studentId;
-    private String grade;
-    private String college ;
-    private String major;
-    private String gender;
-    private String name;
-
+    @Column(name = "Id")
+    private int Id;
+    private String time;
+    private String weather ;
 
 }

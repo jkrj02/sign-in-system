@@ -17,13 +17,13 @@ public class Leave {
 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Id
-    @Column(name = "studentId")
+    @Column(name = "Id")
+    private int Id;
     private int studentId;
-    private String grade;
-    private String college ;
-    private String major;
-    private String gender;
-    private String name;
+    private boolean type ;
+    private String startTime;
+    private String endTime;
+    private int activityId;
 
 
 }

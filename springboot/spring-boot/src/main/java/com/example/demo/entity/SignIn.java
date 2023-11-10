@@ -17,13 +17,10 @@ public class SignIn {
 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Id
-    @Column(name = "studentId")
-    private int studentId;
-    private String grade;
-    private String college ;
-    private String major;
-    private String gender;
-    private String name;
-
+    @Column(name = "Id")
+    private int Id;
+    private int activityId;
+    private int userId ;
+    private String signin;
 
 }

@@ -17,13 +17,9 @@ public class Classroom {
 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Id
-    @Column(name = "studentId")
-    private int studentId;
-    private String grade;
-    private String college ;
-    private String major;
-    private String gender;
-    private String name;
-
+    @Column(name = "classroomId")
+    private int classroomId;
+    private int capacity;
+    private String name ;
 
 }

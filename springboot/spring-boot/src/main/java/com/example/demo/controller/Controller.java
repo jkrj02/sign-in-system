@@ -29,7 +29,7 @@ public class Controller {
     private EntityManager entityManager;
 
     @PostMapping("activity/add")//添加课程
-      public Object addActivity(@RequestBody Activity tt){
+    public Object addActivity(@RequestBody Activity tt){
         return null;
     }
 
@@ -55,6 +55,42 @@ public class Controller {
     {
         return studentService.getAllStudents();
     }
+    @GetMapping("activity")
+    public Object act()
+    {
+        return activityService.getAllActivitys();
+    }
+    @GetMapping("classroom")
+    public Object cla()
+    {
+        return classroomService.getAllClassrooms();
+    }
+    @GetMapping("leave")
+    public Object lea()
+    {
+        return leaveService.getAllLeaves();
+    }
+    @GetMapping("manager")
+    public Object man()
+    {
+        return managerService.getAllManagers();
+    }
+    @GetMapping("signIn")
+    public Object sig()
+    {
+        return signInService.getAllSignIns();
+    }
+    @GetMapping("teacher")
+    public Object tea()
+    {
+        return teacherService.getAllTeachers();
+    }
+    @GetMapping("weather")
+    public Object wea()
+    {
+        return weatherService.getAllWeathers();
+    }
+
     @GetMapping("student/add")
     public Object stuadd()
     {
