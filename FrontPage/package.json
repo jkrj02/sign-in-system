@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "element-plus": "^2.4.2",
+    "vue": "^3.3.7"
   }
 }
