@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.entity.Activity;
 import com.example.demo.entity.Student;
 import com.example.demo.service.*;
 import lombok.RequiredArgsConstructor;
@@ -26,6 +27,26 @@ public class Controller {
 
     @PersistenceContext
     private EntityManager entityManager;
+
+    @PostMapping("activity/add")//添加课程
+      public Object addActivity(@RequestBody Activity tt){
+        return null;
+    }
+
+    @GetMapping("activity/get")//查看日程
+    public Object getActivity(int id ){
+        return null;
+    }
+    @PostMapping("sign/add/{userId}/{activityId}")//添加签到
+    public Object addSignIn(@PathVariable int userId,int activityId){
+
+        return null;
+    }
+
+    @GetMapping("activity/my")//出勤率
+    public Object myActivity(int id ){
+        return null;
+    }
 
 
 
