@@ -15,14 +15,15 @@ import javax.persistence.*;
 @AllArgsConstructor
 public class Student {
 
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+   // @GeneratedValue(strategy=GenerationType.IDENTITY)
+   // 如果id要用自增加，就要用这句话
     @Id
     @Column(name = "studentId")
     private int studentId;
     private String grade;
     private String college ;
     private String major;
-    private String gender;
+    private boolean gender;
     private String name;
 
 

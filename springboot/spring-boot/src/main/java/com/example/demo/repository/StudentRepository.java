@@ -9,3 +9,7 @@ import org.springframework.stereotype.Repository;
 public interface StudentRepository extends CrudRepository<Student, Integer> {
 
 }
+// 示例
+// User findByUserName(String userName);
+//    boolean existsByUserName(String userName);
+//    User findByUserNameAndPassword(String userName, String password);
