@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import java.util.List;
 
 //主程序
 @RestController
@@ -29,14 +31,32 @@ public class Controller {
     @PersistenceContext
     private EntityManager entityManager;
 
-    @PostMapping("activity/add")//添加课程
-    public Object addActivity(@RequestBody Activity tt){
-        return null;
+    @GetMapping("login/{id}")//显示个人信息
+    public Object get(@PathVariable int id){
+        return studentService.findById(id);
     }
 
-    @GetMapping("activity/get")//查看日程
-    public Object getActivity(int id ){
-        return null;
+    @PostMapping("activity/add")//添加活动  同时添加待签到
+    public Object addActivity(@RequestBody Activity tt){
+        Activity activity=activityService.addActivity(tt);
+        Signin a=new Signin();
+        a.setId(0);
+        a.setActivityId(activity.getActivityId());
+        a.setUserId(activity.getOrganizerId());
+        a.setSignin("待签到");
+        signinService.addSignin(a);
+        return activity;
+    }
+
+    @GetMapping("activity/get/{id}")//查看日程
+    public Object getActivity(@PathVariable int id){
+
+        //String sql = "SELECT * FROM activity INNER JOIN signin ON activity.activityId = signin.activityId where signin.userId ="+id;
+        String sql ="SELECT DISTINCT * FROM signin INNER JOIN activity ON  signin.activity_id= activity.activity_id where user_id ="+id;
+        Query query = entityManager.createNativeQuery(sql, returnActivity.class);//指定返回类型
+        List<returnActivity> re = query.getResultList();
+
+        return re;
     }
     @PostMapping("sign/add/{userId}/{activityId}")//添加签到
     public Object addSignIn(@PathVariable int userId,int activityId){
@@ -112,6 +132,11 @@ public class Controller {
         a.setName("小明");
         a.setMajor("计算机");
         a.setStudentId(1120201198);
+        return studentService.addStudent(a);
+    }
+    @PostMapping("student/test")
+    public Object stutest(@RequestBody Student a)
+    {
         return studentService.addStudent(a);
     }
     @GetMapping("student/id")
