@@ -147,7 +147,7 @@ public class Controller {
 
     @Transactional
     @PostMapping ("signin")
-    public boolean siggin(@RequestParam int userId, int classroomId, String signintime)
+    public String siggin(@RequestParam int userId, int classroomId, String signintime)
     {   System.out.println("Hello, World!");
         //String returninfo = "noactivity_in_this_room_at_this_time";
 
@@ -156,41 +156,49 @@ public class Controller {
 
         Query query = entityManager.createNativeQuery(sql, Activity.class);//指定返回类型
         List<Activity> temp= query.getResultList();
-
+        int sigsignin = 0;
         String[] results = signintime.split("/|:");
-        int acttime = 0;
+        long acttime = 0;
         for(String sig:results)
         {
             acttime = acttime*100+Integer.parseInt(sig);
         }
+        System.out.println(String.valueOf(acttime));
         int activityid=-1;
-        if(temp.isEmpty()) return false;
-          // return "noactivity_in_this_room_at_this_time";
+        if(temp.isEmpty())
+          return "parameter error";
         else {
             for (Activity ppp : temp) {
 
                 String starttime =ppp.getTime() ;
-                String[] results1 = signintime.split("/|:");
-                int actstarttime = 0;
+                String[] results1 = starttime.split("/|:");
+                long actstarttime = 0;
                 for(String sig:results1)
                 {
                     actstarttime = actstarttime*100+Integer.parseInt(sig);
                 }
                 String endtime = ppp.getEndTime();
-                String[] results2 = signintime.split("/|:");
-                int actendtime = 0;
+                String[] results2 = endtime.split("/|:");
+                long actendtime = 0;
                 for(String sig:results2)
                 {
                     actendtime = actendtime*100+Integer.parseInt(sig);
                 }
-                if(actstarttime<=acttime && acttime<=actendtime )
+                System.out.println(String.valueOf(actstarttime)+String.valueOf(actendtime));
+                if(actstarttime<acttime && acttime<actendtime )
                 {
                     activityid=ppp.getActivityId();
+                    sigsignin = 2;//迟到
+                }
+                else if( (actstarttime-30)<=acttime && acttime<=actstarttime )
+                {
+                    activityid=ppp.getActivityId();
+                    sigsignin = 1;//签到
                 }
             }
         }
-        if(activityid ==-1)    return false;
-            //return  "noactivity_in_this_room_at_this_time";
+        if(activityid ==-1)
+            return  "parameter error";
 
         String sql2 = "SELECT * FROM signin where activity_id = ";
         sql2 += String.valueOf(activityid);
@@ -199,16 +207,25 @@ public class Controller {
 
         Query query2 = entityManager.createNativeQuery(sql2, Signin.class);//指定返回类型
         List<Signin> temp2= query2.getResultList();
-        if(temp2.isEmpty()) return false;
-            //return "noactivity_in_this_room_at_this_time";
-        else{
+        if(temp2.isEmpty())
+            return "parameter error";
+        else if (  sigsignin == 1)
+        {
             String sql3= "UPDATE signin SET signin = '已签到' where activity_id = ";
             sql3 += String.valueOf(activityid);
             sql3 += " and user_id = ";
             sql3 += String.valueOf(userId);
             entityManager.createNativeQuery(sql3).executeUpdate();
-            return true;
-            //return "successfully_sign for user:"+Integer.toString(userId)+"for activity"+Integer.toString(activityid);
+            return "successfully sign";
+        }
+        else
+        {
+            String sql3= "UPDATE signin SET signin = '迟到' where activity_id = ";
+            sql3 += String.valueOf(activityid);
+            sql3 += " and user_id = ";
+            sql3 += String.valueOf(userId);
+            entityManager.createNativeQuery(sql3).executeUpdate();
+            return "late";
         }
     }
 
@@ -218,13 +235,13 @@ public class Controller {
         System.out.println("Hello, World!");
 
         String[] results0 = start_time.split("/|:");
-        int stime = 0;
+        long stime = 0;
         for(String sig:results0)
         {
             stime = stime*100+Integer.parseInt(sig);
         }
         String[] results1 = end_time.split("/|:");
-        int etime = 0;
+        long etime = 0;
         for(String sig:results1)
         {
             etime = etime*100+Integer.parseInt(sig);
@@ -245,8 +262,8 @@ public class Controller {
 
         for (Activity ppp : temp)
         {
-            int tstime = 0 ;
-            int tetime = 0 ;
+            long tstime = 0 ;
+            long tetime = 0 ;
             String[] results2 = ppp.getTime().split("/|:");
             for(String sig:results2)
             {
