@@ -255,7 +255,7 @@ public class Controller {
 
         class classandrate
         {
-            public String couresename;
+            public String coursename;
             public double attendence;
         }
         List<classandrate> classandrates = new ArrayList<classandrate>();
@@ -277,7 +277,7 @@ public class Controller {
             if(tstime >= stime && tetime <= etime)//
             {
                 classandrate temp2 = new classandrate();
-                temp2.couresename = ppp.getName();
+                temp2.coursename = ppp.getName();
                 int total = 0;
                 int come = 0;
                 System.out.println("Hello, World!!!");
@@ -291,12 +291,13 @@ public class Controller {
                 }
                 temp2.attendence = (double)come / (double)total;
                 classandrates.add(temp2);
-                System.out.println(temp2.couresename+String.valueOf(temp2.attendence )+String.valueOf(come)+String.valueOf(total));
+                System.out.println(temp2.coursename+String.valueOf(temp2.attendence )+String.valueOf(come)+String.valueOf(total));
             }
         }
         System.out.println(classandrates);
         return classandrates;
     }
+
 
 
 }
