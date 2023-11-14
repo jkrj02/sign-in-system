@@ -34,15 +34,15 @@
   </el-card>
 
     <router-link to='/test'>
-        <button class="button1">活动申请</button>
+        <el-button type="success" class="button1">活动申请</el-button>
     </router-link>
 
     <router-link to='/rate'>
-        <button class="button1">出勤率查询</button>
+        <el-button type="success" class="button1">出勤率查询</el-button>
     </router-link>
 
     <router-link to='/history'>
-        <button class="button1">历史日程</button>
+        <el-button type="success" class="button1">历史日程</el-button>
     </router-link>
 
 </template>
@@ -76,11 +76,8 @@
 }
 
 .button1 {
-
   margin: 20px;
-  width: 160px;
   margin-left: 280px;
-  background-color: lightgreen;
 }
 
 </style>

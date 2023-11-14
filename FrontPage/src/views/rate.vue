@@ -4,11 +4,11 @@
     </h2>
 
     <router-link to='/course_rate'>
-        <button class="button">课程出勤率</button>
+        <el-button type="success" class="button">课程出勤率</el-button>
     </router-link>
 
     <router-link to='/activity_rate'>
-        <button class="button">活动出勤率</button>
+        <el-button type="success" class="button">活动出勤率</el-button>
     </router-link>
 
 </template>

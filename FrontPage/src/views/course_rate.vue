@@ -7,7 +7,7 @@
     <el-input v-model="input2" style="width: 500px; margin: 20px 40px;" placeholder="请输入查询截止日期（格式：年-月-日，如2023/11/11/13:00）"></el-input>
 
     <router-link to='/show_course_rate'>
-        <button class="button" style="width: 100px; margin: 20px 700px;">查询</button>
+        <el-button type="success" class="button" style="width: 100px; margin: 20px 700px;">查询</el-button>
     </router-link>
 </template>
 
