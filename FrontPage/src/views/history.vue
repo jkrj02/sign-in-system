@@ -54,16 +54,18 @@
 <style>
 .return {
   margin-left: 400px;
+  margin-top: 20px;
 }
 .demo-collapse {
   margin-left: 400px;
   margin-right: 400px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .icon {
   margin-left: 20px;
 }
 .head {
+  margin-top: 20px;
   text-align-last: center;
 }
 .title {

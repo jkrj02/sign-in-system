@@ -55,6 +55,7 @@
 }
 
 .head {
+  margin-top: 40px;
   text-align-last: center;
 }
 
