@@ -33,7 +33,7 @@
     <div class="text item">{{ '教室：3号楼301 ' }}</div>
   </el-card>
 
-    <router-link to='/test'>
+    <router-link to='/create_activity'>
         <el-button type="success" class="button1">活动申请</el-button>
     </router-link>
 
@@ -84,5 +84,5 @@
 </style>
 
 <script setup>
-    
+
 </script>
