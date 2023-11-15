@@ -298,6 +298,29 @@ public class Controller {
         return classandrates;
     }
 
+    @GetMapping ("/myattendence/{userId}")
+    public double myattendence(@PathVariable int userId){
+        int total = 0;
+        int come = 0;
+        double rate;
+        //String r;
+        String sql1 = "SELECT * FROM signin where user_id = ";
+        sql1 += String.valueOf(userId);
+        Query query1 = entityManager.createNativeQuery(sql1, Signin.class);//指定返回类型
+        List<Signin> temp3 = query1.getResultList();
+        if(temp3.isEmpty())
+        {rate  = -1;}
+        else
+        {
+            for (Signin ptp : temp3) {
+                total += 1;
+                if (ptp.getSignin().equals("已签到")) come += 1;
+            }
+            rate = (double)come / (double)total;
+            //r = String.valueOf(rate);
+        }
+        return rate;
+    }
 
 
 }
