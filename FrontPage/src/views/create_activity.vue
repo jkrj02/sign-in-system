@@ -2,6 +2,7 @@
     <h2 class="head">
         创建临时活动
     </h2>
+    <h3>ID= {{ user_id }}</h3>
 
 <!--    起止时间选择器-->
     <el-row class="el-row">
@@ -74,6 +75,7 @@
         </el-col>
         <el-col class="el-col" :span="8">
             <div class="grid-content ep-bg-purple"/>
+            <el-button type="danger" @click="testLogin">test{{ infos }}</el-button>
         </el-col>
         <el-col class="el-col" :span="4">
             <el-button type="primary" @click="submitActivity">提交</el-button>
@@ -118,7 +120,9 @@
 </style>
 
 <script lang="ts">
+
 export default {
+
     setup() {
         // var room_list = [];         //TODO 获取教室列表 tips：需要获取教室可用状态么？
         const room_list = [
@@ -274,6 +278,7 @@ export default {
             }
 
         ]
+        let infos;
 
 
         return {
@@ -281,7 +286,11 @@ export default {
                 multiple: true,
             },
             room_list,
+            infos,
         }
+    },
+    created() {
+        this.user_id = this.$route.query.user_id;
     },
     data() {
         return {
@@ -289,15 +298,21 @@ export default {
             selected_room: [],
             activity_name: "",
             TestLogs: "123",
+            user_id: '',
         }
     },
     methods:
         {
             submitActivity() {
-                this.TestLogs = "活动名称：" + this.activity_name + " 选择教室：" + this.selected_room + " 活动时间：" + this.activity_time_range
+                this.TestLogs = "用户ID：" + this.user_id + "活动名称：" + this.activity_name + " 选择教室：" + this.selected_room + " 活动时间：" + this.activity_time_range
             },
             cancelSubmit() {
                 this.$router.go(-1)// 返回上一步
+            },
+            testLogin() {
+
+                // this.TestLogs = "12321321"
+                this.$router.push({path: '/login_page', query: {my_id: '12343234'}})
             }
         },
 

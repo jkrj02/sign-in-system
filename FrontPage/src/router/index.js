@@ -7,11 +7,16 @@ import course_rate from '../views/course_rate.vue'
 import activity_rate from '../views/activity_rate.vue'
 import show_course_rate from '../views/show_course_rate.vue'
 import history from '../views/history.vue'
+import login_page from "../views/login_page.vue";
 
 
 const routes = [
   {
     path: '/',
+    component: home
+  },
+  {
+    path: '/home',
     component: home
   },
   {
@@ -41,6 +46,10 @@ const routes = [
   {
     path: '/history',
     component: history
+  },
+  {
+    path: '/login_page',
+    component: login_page
   }
 ]
 

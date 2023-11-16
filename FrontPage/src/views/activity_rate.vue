@@ -2,7 +2,7 @@
     <h2 class="head">
         活动出勤率: 100%
     </h2>
-    
+    <h3>ID= {{ user_id }}</h3>
 
 </template>
 
@@ -44,6 +44,19 @@
 
 </style>
 
-<script setup>
-    
+<script>
+export default {
+    setup() {
+
+    },
+    created() {
+        this.user_id = this.$route.query.user_id;
+    },
+    data() {
+        return {
+            user_id: '',
+        }
+    }
+}
+
 </script>
