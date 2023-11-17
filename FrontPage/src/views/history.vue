@@ -5,7 +5,7 @@
   <h2 class="head">
     历史日程
   </h2>
-  
+    <h3>ID= {{ user_id }}</h3>
   <div class="demo-collapse">
     <el-collapse>
       <el-collapse-item name="1">
@@ -73,19 +73,39 @@
   font-size: 18px;
 }
 .text {
-  margin-left: 20px;
-  font-size: 14px;
+    margin-left: 20px;
+    font-size: 14px;
 }
+
 .card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 </style>
 
-<script lang="ts" setup>
-import {
-  ArrowLeft
-} from '@element-plus/icons-vue'
+
+<script>
+
+import {Finished, ArrowLeft, Check, Close} from "@element-plus/icons-vue";
+
+export default {
+    computed: {
+        ArrowLeft() {
+            return ArrowLeft
+        }
+    },
+    components: {Close, Check, Finished},
+    setup() {
+    },
+    created() {
+        this.user_id = this.$route.query.user_id;
+    },
+    data() {
+        return {
+            user_id: '',
+        }
+    }
+}
+
 </script>
-  

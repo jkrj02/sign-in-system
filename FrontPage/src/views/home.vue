@@ -1,17 +1,21 @@
 <template>
     <h2 class="head">
-        我的日程  11月14号
+        我的日程 11月14号
     </h2>
-    
+    <h3>ID= {{ user_id }}</h3>
+    <router-link :to="{path:'/login_page'}">
+        <el-button type="success" class="button1">登录</el-button>
+    </router-link>
+
     <el-card class="box-card">
-    <template #header>
-      <div class="card-header">
-        <span class="title">日程1</span>
-      </div>
-    </template>
-    <div class="text item">{{ '时间：8:00 ' }}</div>
-    <div class="text item">{{ '教室：中教101 ' }}</div>
-  </el-card>
+        <template #header>
+            <div class="card-header">
+                <span class="title">日程1</span>
+            </div>
+        </template>
+        <div class="text item">{{ '时间：8:00 ' }}</div>
+        <div class="text item">{{ '教室：中教101 ' }}</div>
+    </el-card>
 
     <el-card class="box-card">
     <template #header>
@@ -33,15 +37,15 @@
     <div class="text item">{{ '教室：3号楼301 ' }}</div>
   </el-card>
 
-    <router-link to='/test'>
+    <router-link :to="{path:'/create_activity',query:{user_id:this.user_id}}">
         <el-button type="success" class="button1">活动申请</el-button>
     </router-link>
 
-    <router-link to='/rate'>
+    <router-link :to="{path:'/rate',query:{user_id:this.user_id}}">
         <el-button type="success" class="button1">出勤率查询</el-button>
     </router-link>
 
-    <router-link to='/history'>
+    <router-link :to="{path:'/history',query:{user_id:this.user_id}}">
         <el-button type="success" class="button1">历史日程</el-button>
     </router-link>
 
@@ -83,6 +87,19 @@
 
 </style>
 
-<script setup>
-    
+<script>
+export default {
+    setup() {
+
+    },
+    created() {
+        this.user_id = this.$route.query.user_id;
+    },
+    data() {
+        return {
+            user_id: '',
+        }
+    }
+}
+
 </script>
