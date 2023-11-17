@@ -1,8 +1,8 @@
 spring:
   datasource:
     username: wang1
-    password:
-    url: jdbc:mysql://10.63.233.99:3306/signin?useSSL=false&serverTimezone=Asia/Shanghai
+    password: bit123
+    url: jdbc:mysql://10.62.57.169:3306/signin?useSSL=false&serverTimezone=Asia/Shanghai
 
   jpa:
     properties:
@@ -11,3 +11,11 @@ spring:
   jackson:
     serialization:
       FAIL_ON_EMPTY_BEANS: false
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://10.62.132.160:5173"
+            allowedMethods:
+              - GET

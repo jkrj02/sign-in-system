@@ -11,9 +11,12 @@ import org.springframework.web.bind.annotation.*;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 
 //主程序
+@CrossOrigin
 @RestController
 @RequestMapping("/")
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
@@ -73,7 +76,7 @@ public class Controller {
 
     @GetMapping("student")
     public Object stu()
-    {
+    {System.out.println("Hello, World!");
         return studentService.getAllStudents();
     }
     @GetMapping("activity")
@@ -113,7 +116,8 @@ public class Controller {
     }
     @GetMapping("leave/add")
     public Object leaveAdd()
-    {   Leaveinfo a=new Leaveinfo();
+    {
+        Leaveinfo a=new Leaveinfo();
         a.setActivityId(121);
         a.setEndTime("2020/11/11");
         a.setStudentId(112020);
@@ -166,7 +170,7 @@ public class Controller {
         System.out.println(String.valueOf(acttime));
         int activityid=-1;
         if(temp.isEmpty())
-          return "parameter error";
+            return "parameter error";
         else {
             for (Activity ppp : temp) {
 
@@ -229,7 +233,7 @@ public class Controller {
         }
     }
 
-    @PostMapping ("checkatt")
+    @GetMapping ("checkatt")
     public Object checkatt(@RequestParam int teacherId, String start_time, String end_time)
     {
         System.out.println("Hello, World!");
