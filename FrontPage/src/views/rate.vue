@@ -3,6 +3,10 @@
         出勤率查询
     </h2>
     <h3>ID= {{ user_id }}</h3>
+    <router-link :to="{path:'/home',query:{user_id:this.user_id}}">
+        <el-button type="success" class="button">返回主页</el-button>
+    </router-link>
+
     <router-link :to="{path:'/course_rate',query:{user_id:this.user_id}}">
         <el-button type="success" class="button">课程出勤率</el-button>
     </router-link>
