@@ -8,6 +8,7 @@ import activity_rate from '../views/activity_rate.vue'
 import show_course_rate from '../views/show_course_rate.vue'
 import history from '../views/history.vue'
 import login_page from "../views/login_page.vue";
+import schedule from '../views/schedule.vue'
 
 
 const routes = [
@@ -50,7 +51,11 @@ const routes = [
   {
     path: '/login_page',
     component: login_page
-  }
+  },
+  {
+    path: '/schedule',
+    component: schedule
+  },
 ]
 
 const router = createRouter({
