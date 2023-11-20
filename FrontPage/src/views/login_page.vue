@@ -1,5 +1,6 @@
 <script>
 import {useRouter, useRoute} from "vue-router";
+import { ElMessageBox } from 'element-plus'
 
 const router = useRouter();
 const route = useRoute();
@@ -21,7 +22,7 @@ export default {
 
     data() {
         return {
-            user_id: '2213213213213',
+            user_id: '',
             input_id: '1120208888',
         }
     },
@@ -30,8 +31,16 @@ export default {
             this.user_id = this.input_id
         },
         jump() {
-            this.$router.push({path: '/', query: {user_id: this.user_id}})
-
+            if(this.user_id === '') {
+                ElMessageBox.alert('请点击set id进行登录', 'Error', {
+                // if you want to disable its autofocus
+                // autofocus: false,
+                confirmButtonText: 'OK'
+                })
+            }
+            else {
+                this.$router.push({path: '/', query: {user_id: this.user_id}})
+            }
             // this.$router.push({path:'/create_activity', query:{user_id:this.user_id}})
         }
     }

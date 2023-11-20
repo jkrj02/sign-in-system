@@ -35,12 +35,13 @@ methods: {
         method: 'get',
         headers: {
             'Access-Control-Allow-Origin': 'http://localhost:5173'},
-        url: 'http://10.62.57.169:8080/checkatt?teacherId=100&start_time='+this.start_time+'&end_time='+this.end_time,
+        url: 'http://10.63.24.243:8080/checkatt?teacherId=100&start_time='+this.start_time+'&end_time='+this.end_time,
       };
 
       const response = await axios(config);
       this.response = response.data;
       console.log(JSON.stringify(response.data));
+      console.log(this.start_time)
     }
     catch (error) {
       console.error('There was an error!', error);
