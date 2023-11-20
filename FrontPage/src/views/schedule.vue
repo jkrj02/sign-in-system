@@ -1,9 +1,9 @@
 <template>
-    <h2 class="head">
+    <h3 class="head">
         我的课程 
-    </h2>
-    <!-- <h3 class="head">我的ID： {{ user_id }}</h3> -->
-    <!-- <router-link :to="{path:'/login_page'}">
+    </h3>
+    <!-- <h3 class="head">我的ID： {{ user_id }}</h3>
+    <router-link :to="{path:'/login_page'}">
         <el-button type="success" class="button1">登录</el-button>
     </router-link> -->
     <h3 class="head">{{ formattedTime }}</h3>
@@ -14,7 +14,8 @@
                 <span class="title">课程1</span>
             </div>
         </template>
-        <div class="text item">{{ '时间：8:00 ' }}</div>
+        <div class="text item">{{ '开始时间：8:00 ' }}</div>
+        <div class="text item">{{ '结束时间：10:00 ' }}</div>
         <div class="text item">{{ '教室：中教101 ' }}</div>
     </el-card>
 
@@ -24,26 +25,36 @@
         <span class="title">课程2</span>
       </div>
     </template>
-    <div class="text item">{{ '时间：2:00 ' }}</div>
+    <div class="text item">{{ '开始时间：14:00 ' }}</div>
+    <div class="text item">{{ '结束时间：16:00 ' }}</div>
     <div class="text item">{{ '教室：中教301 ' }}</div>
   </el-card>
 
-  <h2 class="head">
+  <h3 class="head">
         我的活动 
-    </h2>
+    </h3>
     <el-card class="box-card">
     <template #header>
       <div class="card-header">
         <span class="title">活动1</span>
       </div>
     </template>
-    <div class="text item">{{ '时间：18:00 ' }}</div>
+    <div class="text item">{{ '开始时间：18:00 ' }}</div>
+    <div class="text item">{{ '结束时间：20:00 ' }}</div>
     <div class="text item">{{ '教室：3号楼301 ' }}</div>
   </el-card>
 
-    <router-link :to="{path:'/home',query:{user_id:this.user_id}}">
+  <div class="button2 text" v-if="response">
+    <pre>{{ response }}</pre>
+  </div>
+
+  <div class="button-container">
+    <el-button @click="checkAttendance" type="success">查询</el-button>
+  </div>
+
+    <router-link :to="{path:'/history',query:{user_id:this.user_id}}">
         <div class="button2">
-            <el-button type="success">返回主页</el-button>
+            <el-button type="success">历史日程</el-button>
         </div>
     </router-link>
 
@@ -57,16 +68,16 @@
 }
 
 .head {
-  margin-top: 20px;
+  margin-top: 15px;
   text-align-last: center;
 }
 
 .title {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .text {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .item {
@@ -75,17 +86,18 @@
 
 .box-card {
   margin: 20px auto;
-  width: 480px;
+  width: 430px;
 }
 
 .button2 {
-  margin: 20px;
+  margin: 15px;
   text-align: center;
 }
 
 </style>
 
 <script>
+import axios from 'axios'
 export default {
     setup() {
 
@@ -93,18 +105,36 @@ export default {
     created() {
         this.user_id = this.$route.query.user_id;
     },
-    data() {
-        return {
-            user_id: '',
-        }
-    },
     data () {
         return {
-        currentTime: new Date()
+          user_id: '',
+          currentTime: new Date(),
+          response: null
         }
-    },
+    }, 
 
-    computed: {
+    methods: {
+    async checkAttendance() {
+    try {
+      var config = {
+        method: 'get',
+        headers: {
+            'Access-Control-Allow-Origin': 'http://localhost:5173'},
+        url: 'http://10.63.24.243:8080/activity/get/1120209999'
+      };
+
+      const response = await axios(config);
+      this.response = response.data;
+      console.log(JSON.stringify(response.data));
+      console.log(this.start_time)
+    }
+    catch (error) {
+      console.error('There was an error!', error);
+      this.response = 'Error: ' + error.message;
+    }
+  },
+  },
+  computed: {
         formattedTime () {
             const date = new Date(this.currentTime)
             const year = date.getFullYear()
@@ -115,8 +145,10 @@ export default {
             const second = date.getSeconds()
             return `${year}-${month}-${day}`
         }
-    }   
-
+    }
 }
+
+
+
 
 </script>
