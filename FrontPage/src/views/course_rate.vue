@@ -9,11 +9,23 @@
     <el-date-picker v-model="end_time" value-format="YYYY/MM/DD/hh:mm" type="datetime" placeholder="End date" @change="getBirthDate"></el-date-picker>
   </div>
   
-
-  <div v-if="response">
-    <h3>课程出勤率:</h3>
-    <pre>{{ response }}</pre>
+  <div v-if="response" class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>课程</th>
+          <th>出勤率</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(item, index) in response" :key="index">
+          <td>{{ item.coursename }}</td>
+          <td>{{ item.attendence }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+
   <div class="button-container">
     <el-button @click="checkAttendance" type="success">查询</el-button>
   </div>
@@ -41,6 +53,22 @@
   width: 100%;
   margin-bottom: 20px;
 }
+.table-container {
+    width: 30%;
+    margin: 0 auto; margin-bottom: 20px;
+  }
+table {
+  width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  thead {
+    background-color: #f2f2f2;
+  }
 
 </style>
 
@@ -52,6 +80,7 @@ data() {
   return {
     start_time: '',
     end_time: '',
+    tableData: [],
     response: null
   }
 },
@@ -69,7 +98,6 @@ methods: {
       const response = await axios(config);
       this.response = response.data;
       console.log(JSON.stringify(response.data));
-      console.log(this.start_time)
     }
     catch (error) {
       console.error('There was an error!', error);
