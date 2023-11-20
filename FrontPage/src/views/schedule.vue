@@ -44,12 +44,22 @@
     <div class="text item">{{ '教室：3号楼301 ' }}</div>
   </el-card>
 
-  <div class="button2 text" v-if="response">
-    <pre>{{ response }}</pre>
+  <div v-if="response">
+    <el-card v-for="(item, index) in response" :key="index" class="box-card">
+    <template #header>
+      <div class="card-header">
+        <span class="title">{{item.type}}</span>
+      </div>
+    </template>
+    <div class="text item">{{ '开始时间： '+item.time }}</div>
+    <div class="text item">{{ '结束时间： '+item.endTime }}</div>
+    <div class="text item">{{ '教室ID： '+item.classroomId }}</div>
+    <div class="text item">{{ '状态： '+item.approved }}</div>
+  </el-card>
   </div>
 
   <div class="button-container">
-    <el-button @click="checkAttendance" type="success">查询</el-button>
+    <el-button @click="checkAttendance" type="success">查看更多</el-button>
   </div>
 
     <router-link :to="{path:'/history',query:{user_id:this.user_id}}">
