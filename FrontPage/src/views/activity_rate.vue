@@ -1,62 +1,42 @@
 <template>
-    <h2 class="head">
-        活动出勤率: 100%
-    </h2>
-    <h3>ID= {{ user_id }}</h3>
-
+  <h2 class="head">
+      活动出勤率: 100%
+  </h2>
+  <h3 class="head">
+    ID = {{ user_id }}
+  </h3>
+  <div class="button-container">
+    <el-button @click="returnRate" type="success">返回</el-button>
+  </div>
 </template>
 
 <style>
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .head {
   text-align-last: center;
 }
 
-.title {
-  font-size: 18px;
-}
-
-.text {
-  font-size: 18px;
-}
-
-.item {
-  margin-bottom: 14px;
-}
-
-.box-card {
-  margin: 20px auto;
-  width: 480px;
-}
-
 .button {
-
   margin: 20px auto;
   width: 160px;
   margin-left: 440px;
   background-color: lightgreen;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 </style>
 
 <script>
 export default {
-    setup() {
-
-    },
-    created() {
-        this.user_id = this.$route.query.user_id;
-    },
-    data() {
-        return {
-            user_id: '',
-        }
-    }
+methods: {
+returnRate(){
+  this.$router.go(-1)// 返回上一步
+},
 }
-
+}
 </script>

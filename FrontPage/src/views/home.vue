@@ -82,9 +82,10 @@
     <!-- <router-link :to="{path:'/create_activity',query:{user_id:this.user_id}}">
         <el-button type="success" class="button1">活动申请</el-button>
     </router-link>
-
-    <router-link :to="{path:'/rate',query:{user_id:this.user_id}}">
-        <el-button type="success" class="button1">出勤率查询</el-button>
+  </div>
+  <div class="button-container">
+    <router-link :to="{path:'/rate', query: {user_id: user_id}}">
+      <el-button type="success">出勤率</el-button>
     </router-link>
 
     <router-link :to="{path:'/history',query:{user_id:this.user_id}}">
@@ -94,27 +95,32 @@
         <el-button type="success" class="button1">日程查询</el-button>
     </router-link> -->
 
+  <!-- </div>
+  <div class="button-container">
+    <el-button @click="closeWindow" type="success">退出</el-button> -->
+    <!-- 加个关闭页面的功能 -->
+  <!-- </div> -->
 </template>
 
-<style> 
-/* .card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 
-/* .head {
+<style> 
+.head {
   margin-top: 40px;
   text-align-last: center;
-} */
+}
 
-/* .title {
-  font-size: 18px;
-} */
+.button-row {
+  display: flex;
+  justify-content: center; /* 使按钮在容器中居中 */
+  gap: 1px; /* 按钮之间的间隔 */
+}
 
-/* .text {
-  font-size: 18px;
-} */
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
 /* .item {
   margin-bottom: 14px;
@@ -131,6 +137,11 @@
 .button1 {
   margin: 20px;
   margin-left: 280px;
+}
+.button{
+  margin: 20px 0; /* 垂直边距保留，水平边距移除 */
+  flex-grow: 1; /* 使按钮在水平方向上伸缩 */
+  max-width: 100px; /* 可以根据需要设置最大宽度 */
 }
 
 .title {

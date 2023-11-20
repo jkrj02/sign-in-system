@@ -2,19 +2,47 @@
   <h2 class="head">
       课程出勤率查询
   </h2>
+  <div class="button-container">
+    <el-date-picker v-model="start_time" value-format="YYYY/MM/DD/hh:mm" type="datetime" placeholder="Start date" @change="getBirthDate"></el-date-picker>
+  </div>
+  <div class="button-container">
+    <el-date-picker v-model="end_time" value-format="YYYY/MM/DD/hh:mm" type="datetime" placeholder="End date" @change="getBirthDate"></el-date-picker>
+  </div>
   
-  <el-date-picker v-model="start_time" type="datetime" placeholder="Start date" @change="dateChange" style="width: 500px; margin: 20px 500px;"></el-date-picker>
-  <el-date-picker v-model="end_time" type="datetime" placeholder="End date" @change="dateChange" style="width: 500px; margin: 20px 500px;"></el-date-picker>
 
   <div v-if="response">
     <h3>课程出勤率:</h3>
     <pre>{{ response }}</pre>
   </div>
-  <router-link :to="{path:'/rate',query:{user_id:this.user_id}}">
-      <el-button type="success" class="button">返回</el-button>
-  </router-link>
-  <el-button @click="checkAttendance" type="success" class="button" style="width: 100px; margin: 20px 700px;">查询</el-button>
+  <div class="button-container">
+    <el-button @click="checkAttendance" type="success">查询</el-button>
+  </div>
+  <div class="button-container">
+    <el-button @click="returnRate" type="success">返回</el-button>
+  </div>
 </template>
+
+<style>
+/* style="width: 500px; margin: 20px 500px;" */
+.head {
+  text-align-last: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.data_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+</style>
 
 <script>
 import axios from 'axios'
@@ -47,7 +75,10 @@ methods: {
       console.error('There was an error!', error);
       this.response = 'Error: ' + error.message;
     }
-  }
+  },
+  returnRate() {
+    this.$router.go(-1)// 返回上一步
+  },
 }
 };
 </script>
