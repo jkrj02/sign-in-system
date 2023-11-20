@@ -1,11 +1,8 @@
 <template>
-  <router-link to='/'>
-    <el-button type="success" :icon="ArrowLeft" class="return">返回</el-button>
-  </router-link>
   <h2 class="head">
     历史日程
   </h2>
-    <h3>ID= {{ user_id }}</h3>
+    <!-- <h3>ID= {{ user_id }}</h3> -->
   <div class="demo-collapse">
     <el-collapse>
       <el-collapse-item name="1">
@@ -47,6 +44,9 @@
         <div class="text">{{  '地点：8号教学楼1003' }}</div>
       </el-collapse-item>
       
+      <router-link to='/'>
+    <el-button type="success" :icon="ArrowLeft" class="return">返回</el-button>
+  </router-link>
     </el-collapse>
   </div>
 </template>
