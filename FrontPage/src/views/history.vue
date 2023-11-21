@@ -14,12 +14,13 @@
             <span class="title">{{ item.name }}</span>
             <el-icon class="icon" color="#41A8A8" :size="20" v-if="item.signin === '已签到'"><Finished /></el-icon>
             <el-icon class="icon" color="#F0A900" :size="20" v-if="item.signin === '迟到'"><Check /></el-icon>
-            <el-icon class="icon" color="#41A8A8" :size="20" v-if="item.signin === '未签到'"><Close /></el-icon>
+            <el-icon class="icon" color="#D43306" :size="20" v-if="item.signin === '未签到'"><Close /></el-icon>
           </div>
         </template>
         <div class="text">{{  '开始时间：' + item.time  }}</div>
         <div class="text">{{  '结束时间：' + item.endTime }}</div>
-        <div class="text">{{  '地点：3号教学楼301' }}</div>
+        <div class="text" v-if="item.classroomId === 0">{{  '地点：3号教学楼301' }}</div>
+        <div class="text" v-if="item.classroomId === 2">{{  '地点：8号教学楼1003' }}</div>
       </el-collapse-item>
     </el-collapse>
   </div>
@@ -82,12 +83,13 @@ export default {
     data() {
       return {
         start: 0,
-        nowTime: 0
+        nowTime: 0,
+        user_id: ''
       }
     },
     created() {
       this.user_id = this.$route.query.user_id;
-      console.log("User_ID: ", this.start);
+      console.log("User_ID: ", this.user_id);
       this.checkHistory();
     },
     mounted() {

@@ -62,7 +62,7 @@
     <el-button @click="checkAttendance" type="success">查看更多</el-button>
   </div>
 
-    <router-link :to="{path:'/history',query:{user_id:this.user_id}}">
+    <router-link :to="{path:'/history', query:{user_id:this.user_id}}">
         <div class="button2">
             <el-button type="success">历史日程</el-button>
         </div>
