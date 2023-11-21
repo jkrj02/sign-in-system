@@ -1,6 +1,8 @@
 <template>
   <h2 class="head">
-    活动出勤率: {{ this.response }} %
+    活动出勤率: {{ this.attendencerate }} %
+    迟到率：{{ this.laterate }} %
+    缺席率：{{ this.absencerate }} %
   </h2>
 
   <div class="button-container">
@@ -31,11 +33,15 @@
 
 <script>
 import axios from 'axios';
+import global from './global.vue'
 
 export default {
   data() {
     return {
-      response: null
+      response: null,
+      attendencerate: null,
+      laterate: null,
+      absencerate: null
     };
   },
   methods: {
@@ -44,11 +50,14 @@ export default {
         var config = {
           method: 'get',
           headers: {'Access-Control-Allow-Origin': 'http://localhost:5173'},
-          url: 'http://10.63.110.16:8080/myattendence/1120209999',
+          url: global.httpUrl + 'myattendence/1120209999',
         };
 
         const response = await axios(config);
-        this.response = (response.data* 100).toFixed(2);
+        this.response = response.data;
+        this.attendencerate = (this.response.attendencerate *100).toFixed(2);
+        this.laterate = (this.response.laterate * 100).toFixed(2);
+        this.absencerate = (this.response.absencerate *100).toFixed(2);
         console.log(JSON.stringify(response.data));
       }
       catch (error) {
