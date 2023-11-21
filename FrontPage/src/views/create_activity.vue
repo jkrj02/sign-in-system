@@ -75,7 +75,7 @@
         </el-col>
         <el-col class="el-col" :span="8">
             <div class="grid-content ep-bg-purple"/>
-            <el-button type="danger" @click="testLogin">test{{ infos }}</el-button>
+<!--            <el-button type="danger" @click="testLogin">test{{ infos }}</el-button>-->
         </el-col>
         <el-col class="el-col" :span="4">
             <el-button type="primary" @click="submitActivity">提交</el-button>
@@ -85,7 +85,7 @@
         </el-col>
     </el-row>
 
-    <el-text>{{ TestLogs }}</el-text>   <!--调试用输出显示-->
+    <!--    <el-text>{{ TestLogs }}</el-text>   &lt;!&ndash;调试用输出显示&ndash;&gt;-->
 
 </template>
 

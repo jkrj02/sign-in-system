@@ -402,3 +402,3228 @@ public class Controller {
 //
 //        return null;
 //    }
+//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }//
+// @PutMapping("user/update")//用户更新
+//    public boolean update(@RequestBody User user) {
+//        return studentService.update(user) ? true : false;
+//    }
+//
+//    @DeleteMapping("user/delete/{id}")//用户删除
+//    public boolean deleteById(@PathVariable int id) {
+//
+//        return studentService.deleteById(id) ? true : false;
+//    }
+//
+//    @PostMapping("course/add")//添加课程
+//    public Object addCourse(@RequestBody Course tt) {
+//        if (courseService.exists(tt)) {
+//            return  new ResponseEntity <> ("课程已存在", HttpStatus.FORBIDDEN);
+//        }
+//        return courseService.insert(tt)!=null ?new ResponseEntity <> ("创建成功", HttpStatus.OK): new ResponseEntity <> ("创建失败", HttpStatus.FORBIDDEN);
+//    }
+// @GetMapping("test4")//复杂逻辑,多表查询 要用sql,不能自动生成
+//    public Object test4(){
+//        String sql ="SELECT * FROM my_like";
+//        //String sql = "SELECT * FROM course INNER JOIN user ON course.teacher_name = user.user_name";
+//       // Query query = entityManager.createNativeQuery(sql, myLike.class);//指定返回类型
+//
+//        return null;
+//    }
