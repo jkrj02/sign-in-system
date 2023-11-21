@@ -75,6 +75,7 @@ table {
 
 <script>
 import axios from 'axios'
+import global from './global.vue'
 
 export default {
 data() {
@@ -93,7 +94,7 @@ methods: {
         method: 'get',
         headers: {
             'Access-Control-Allow-Origin': 'http://localhost:5173'},
-        url: 'http://10.63.110.16:8080/checkatt?teacherId=100&start_time='+this.start_time+'&end_time='+this.end_time,
+        url: global.httpUrl + 'checkatt?teacherId=100&start_time=' + this.start_time + '&end_time=' + this.end_time,
       };
 
       const response = await axios(config);
