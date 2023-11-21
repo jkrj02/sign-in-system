@@ -12,17 +12,17 @@
             @open="handleOpen"
             @select="changeSide"
           >
-            <el-menu-item index="login_page" class="item">
+            <el-menu-item index="login_page">
               <span>登录</span>
             </el-menu-item>
-            <el-menu-item index="schedule" class="item">
+            <el-menu-item index="schedule">
               <span>查看日程</span>
             </el-menu-item>
-            <el-menu-item index="create_activity" class="item">
+            <el-menu-item index="create_activity">
               <span>活动创建</span>
             </el-menu-item>
             <el-sub-menu>
-              <template #title class="item">
+              <template #title>
                 <span>签到率分析</span>
               </template>
               <el-menu-item index="course_rate">
@@ -87,10 +87,6 @@
   width: 100%;
   margin-bottom: 20px;
 }
-
-/* .item {
-  margin-bottom: 14px;
-} */
 
 /* .box-card {
   margin: 20px auto;
