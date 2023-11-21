@@ -32,6 +32,9 @@
                 <span>活动签到率</span>
               </el-menu-item>
             </el-sub-menu>
+            <el-menu-item>
+              <span>退出</span>
+            </el-menu-item>
           </el-menu>
         </el-aside>
         <el-main class="el-main">
