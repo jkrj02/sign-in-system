@@ -19,7 +19,8 @@
             <el-menu-item index="create_activity">
               <span>活动创建</span>
             </el-menu-item>
-            <el-sub-menu index="rate">
+            <!-- <el-sub-menu index="rate"> -->
+            <el-sub-menu>
               <template #title>
                 <span>签到率分析</span>
               </template>
@@ -30,6 +31,9 @@
                 <span>活动签到率</span>
               </el-menu-item>
             </el-sub-menu>
+            <el-menu-item>
+              <span>退出</span>
+            </el-menu-item>
           </el-menu>
         </el-aside>
         <el-main>
