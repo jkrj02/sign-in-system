@@ -3,10 +3,10 @@
       课程出勤率查询
   </h2>
   <div class="button-container">
-    <el-date-picker v-model="start_time" value-format="YYYY/MM/DD/hh:mm" type="datetime" placeholder="Start date" @change="getBirthDate"></el-date-picker>
+    <el-date-picker v-model="start_time" value-format="YYYY/MM/DD/HH:mm" type="datetime" placeholder="Start date" @change="getBirthDate"></el-date-picker>
   </div>
   <div class="button-container">
-    <el-date-picker v-model="end_time" value-format="YYYY/MM/DD/hh:mm" type="datetime" placeholder="End date" @change="getBirthDate"></el-date-picker>
+    <el-date-picker v-model="end_time" value-format="YYYY/MM/DD/HH:mm" type="datetime" placeholder="End date" @change="getBirthDate"></el-date-picker>
   </div>
   
   <div v-if="response" class="table-container">
@@ -14,13 +14,15 @@
       <thead>
         <tr>
           <th>课程</th>
-          <th>出勤率</th>
+          <th>出勤率(%)</th>
+          <th>详情</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="(item, index) in response" :key="index">
           <td>{{ item.coursename }}</td>
-          <td>{{ item.attendence }}</td>
+          <td>{{ item.attendence *100 }}</td>
+          <td><el-button>查看</el-button></td>
         </tr>
       </tbody>
     </table>
@@ -35,7 +37,6 @@
 </template>
 
 <style>
-/* style="width: 500px; margin: 20px 500px;" */
 .head {
   text-align-last: center;
 }
@@ -92,7 +93,7 @@ methods: {
         method: 'get',
         headers: {
             'Access-Control-Allow-Origin': 'http://localhost:5173'},
-        url: 'http://10.63.24.243:8080/checkatt?teacherId=100&start_time='+this.start_time+'&end_time='+this.end_time,
+        url: 'http://10.63.110.16:8080/checkatt?teacherId=100&start_time='+this.start_time+'&end_time='+this.end_time,
       };
 
       const response = await axios(config);
