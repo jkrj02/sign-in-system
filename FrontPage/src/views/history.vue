@@ -17,10 +17,10 @@
             <el-icon class="icon" color="#D43306" :size="20" v-if="item.signin === '未签到'"><Close /></el-icon>
           </div>
         </template>
-        <div class="text">{{  '开始时间：' + item.time  }}</div>
-        <div class="text">{{  '结束时间：' + item.endTime }}</div>
-        <div class="text" v-if="item.classroomId === 0">{{  '地点：3号教学楼301' }}</div>
-        <div class="text" v-if="item.classroomId === 2">{{  '地点：8号教学楼1003' }}</div>
+        <div class="wenzi">{{  '开始时间：' + item.time  }}</div>
+        <div class="wenzi">{{  '结束时间：' + item.endTime }}</div>
+        <div class="wenzi" v-if="item.classroomId === 0">{{  '地点：3号教学楼301' }}</div>
+        <div class="wenzi" v-if="item.classroomId === 2">{{  '地点：8号教学楼1003' }}</div>
       </el-collapse-item>
     </el-collapse>
   </div>
@@ -50,9 +50,8 @@
   margin-left: 20px;
   font-size: 18px;
 }
-.text {
-    margin-left: 20px;
-    font-size: 14px;
+.wenzi {
+    font-size: medium;
 }
 
 .card-header {
