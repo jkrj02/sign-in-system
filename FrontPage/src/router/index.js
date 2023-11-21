@@ -8,12 +8,48 @@ import activity_rate from '../views/activity_rate.vue'
 import show_course_rate from '../views/show_course_rate.vue'
 import history from '../views/history.vue'
 import login_page from "../views/login_page.vue";
+import schedule from '../views/schedule.vue'
+import welcome from '../views/welcome.vue'
 
 
 const routes = [
   {
     path: '/',
-    component: home
+    component: home,
+    children:[
+      {
+        path: '/login_page',
+        component: login_page
+      },
+      {
+        path: '/schedule',
+        component: schedule
+      },
+      {
+        path: '/create_activity',
+        component: create_activity
+      },
+      {
+        path: '/rate',
+        component: rate
+      },
+      {
+        path: '/course_rate',
+        component: course_rate
+      },
+      {
+        path: '/activity_rate',
+        component: activity_rate
+      },
+      {
+        path: '/welcome',
+        component: welcome
+      },
+      {
+        path: '/history',
+        component: history
+      },
+    ]
   },
   {
     path: '/home',
@@ -50,7 +86,15 @@ const routes = [
   {
     path: '/login_page',
     component: login_page
-  }
+  },
+  {
+    path: '/schedule',
+    component: schedule
+  },
+  {
+    path: '/welcome',
+    component: welcome
+  },
 ]
 
 const router = createRouter({
