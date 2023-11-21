@@ -126,10 +126,10 @@ export default {
     },
     methods: {
       changeSide(path) {
-        this.$router.push(path);
+        this.$router.push({path: path, query: {user_id: this.user_id}});
       },
       handleOpen(path) {
-        this.$router.push(path);
+          this.$router.push({path: path, query: {user_id: this.user_id}});
       },
     }
     
