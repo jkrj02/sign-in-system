@@ -6,7 +6,7 @@
     <router-link :to="{path:'/login_page'}">
         <el-button type="success" class="button1">登录</el-button>
     </router-link> -->
-    <h3 class="head">{{ formattedTime }}</h3>
+    <h3 class="head">{{ formattedTime1 }}</h3>
 
     <el-card class="box-card">
         <template #header>
@@ -45,24 +45,27 @@
   </el-card>
 
   <div v-if="response">
-    <el-card v-for="(item, index) in response" :key="index" class="box-card">
-    <template #header>
+    <div v-for="(item, index) in response" :key="index" >
+    <el-card v-if="item.endTime >= nowTime" class="box-card">
+      <template #header>
       <div class="card-header">
         <span class="title">{{item.type}}</span>
       </div>
     </template>
     <div class="text item">{{ '开始时间： '+item.time }}</div>
     <div class="text item">{{ '结束时间： '+item.endTime }}</div>
-    <div class="text item">{{ '教室ID： '+item.classroomId }}</div>
-    <div class="text item">{{ '状态： '+item.approved }}</div>
-  </el-card>
+    <div class="text item">{{ '教室： 中教601' }}</div>
+  
+    </el-card>
+    
+  </div>
   </div>
 
   <div class="button-container">
     <el-button @click="checkAttendance" type="success">查看更多</el-button>
   </div>
 
-    <router-link :to="{path:'/history', query:{user_id:this.user_id}}">
+    <router-link :to="{path:'/history',query:{user_id:this.user_id}}">
         <div class="button2">
             <el-button type="success">历史日程</el-button>
         </div>
@@ -108,6 +111,7 @@
 
 <script>
 import axios from 'axios'
+import global from './global.vue'
 export default {
     setup() {
 
@@ -120,7 +124,8 @@ export default {
         return {
           user_id: '',
           currentTime: new Date(),
-          response: null
+          response: null,
+          nowTime: 0
         }
     }, 
 
@@ -131,22 +136,39 @@ export default {
             method: 'get',
             headers: {
                 'Access-Control-Allow-Origin': 'http://localhost:5173'},
-            url: 'http://10.63.24.243:8080/activity/get/1120209999'
+                url: global.httpUrl + 'activity/get/1120209999',
           };
 
           const response = await axios(config);
           this.response = response.data;
           console.log(JSON.stringify(response.data));
-          console.log(this.start_time)
+          console.log(this.start_time);
+          this.nowTime = this.formattedTime();
         }
         catch (error) {
           console.error('There was an error!', error);
           this.response = 'Error: ' + error.message;
         }
       },
+      formattedTime () {
+        const date = new Date();
+        let year = date.getFullYear();
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+        if (hour < 10) {
+          hour = "0" + hour;
+        }
+        if (minute < 10) {
+          minute = "0" + minute;
+        }
+        console.log(`${year}/${month}/${day}/${hour}:${minute}`);
+        return `${year}/${month}/${day}/${hour}:${minute}`;
+      }
     },
     computed: {
-          formattedTime () {
+          formattedTime1 () {
               const date = new Date(this.currentTime)
               const year = date.getFullYear()
               const month = date.getMonth() + 1
