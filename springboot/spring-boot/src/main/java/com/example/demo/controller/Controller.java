@@ -349,27 +349,44 @@ public class Controller {
     }
 
     @GetMapping ("/myattendence/{userId}")
-    public double myattendence(@PathVariable int userId){
+    public Object myattendence(@PathVariable int userId){
         int total = 0;
         int come = 0;
+        int lat = 0;
+        int abs = 0;
         double rate;
         //String r;
+        class returnin
+        {
+            public double attendencerate;
+            public double laterate;
+            public double absencerate;
+        }
+        returnin rrr = new returnin();
         String sql1 = "SELECT * FROM signin where user_id = ";
         sql1 += String.valueOf(userId);
         Query query1 = entityManager.createNativeQuery(sql1, Signin.class);//指定返回类型
         List<Signin> temp3 = query1.getResultList();
         if(temp3.isEmpty())
-        {rate  = -1;}
+        {
+            rrr.attendencerate = 0;
+            rrr.laterate = 0;
+            rrr.absencerate = 0;
+        }
         else
         {
             for (Signin ptp : temp3) {
-                total += 1;
+                if (!ptp.getSignin().equals("待签到")) total += 1;
                 if (ptp.getSignin().equals("已签到")) come += 1;
+                if (ptp.getSignin().equals("迟到")) lat += 1;
+                if (ptp.getSignin().equals("未签到")) abs += 1;
             }
-            rate = (double)come / (double)total;
+            rrr.attendencerate= (double)come / (double)total;
+            rrr.laterate = (double)lat / (double)total;
+            rrr.absencerate = (double)abs / (double)total;
             //r = String.valueOf(rate);
         }
-        return rate;
+        return rrr;
     }
 
     
