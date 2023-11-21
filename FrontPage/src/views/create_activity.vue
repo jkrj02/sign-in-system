@@ -389,9 +389,9 @@ export default {
             },
 
             setInfo() {
-                this.activity_info.organizerId = this.user_id;
+                this.activity_info.organizerId = +this.user_id;
                 this.activity_info.name = this.activity_name;
-                this.activity_info.classroomId = 0;
+                this.activity_info.classroomId = 0;//TODO 暂时写死了
                 this.activity_info.time = this.activity_time_range[0];
                 this.activity_info.endTime = this.activity_time_range[1];
             },
