@@ -66,6 +66,7 @@
 
 import {Finished, ArrowLeft, Check, Close} from "@element-plus/icons-vue";
 import axios from 'axios'
+import global from './global.vue'
 
 export default {
     computed: {
@@ -99,7 +100,7 @@ export default {
             method: 'get',
             headers: {
                 'Access-Control-Allow-Origin': 'http://localhost:5173'},
-            url: 'http://10.63.110.16:8080/activity/get/1120209999',
+            url: global.httpUrl + 'activity/get/1120209999',
           };
           const response = await axios(config);
           this.response = response.data;
@@ -114,16 +115,16 @@ export default {
       },
       formattedTime () {
         const date = new Date();
-        const year = date.getFullYear();
-        const month = date.getMonth() + 1;
-        const day = date.getDate();
-        const hour = date.getHours();
-        const minute = date.getMinutes();
+        let year = date.getFullYear();
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
+        let hour = date.getHours();
+        let minute = date.getMinutes();
         if (hour < 10) {
-          hour = "0" + hours;
+          hour = "0" + hour;
         }
         if (minute < 10) {
-          minute = "0" + minutes;
+          minute = "0" + minute;
         }
         console.log(`${year}/${month}/${day}/${hour}:${minute}`);
         return `${year}/${month}/${day}/${hour}:${minute}`;
