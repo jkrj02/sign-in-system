@@ -39,7 +39,7 @@ export default {
                 })
             }
             else {
-                this.$router.push({path: '/', query: {user_id: this.user_id}})
+                this.$router.push({path: '/welcome', query: {user_id: this.user_id}})
             }
             // this.$router.push({path:'/create_activity', query:{user_id:this.user_id}})
         }

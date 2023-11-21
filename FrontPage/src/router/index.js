@@ -44,7 +44,11 @@ const routes = [
       {
         path: '/welcome',
         component: welcome
-      }
+      },
+      {
+        path: '/history',
+        component: history
+      },
     ]
   },
   {

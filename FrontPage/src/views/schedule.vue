@@ -114,6 +114,7 @@ export default {
     },
     created() {
         this.user_id = this.$route.query.user_id;
+        console.error("User_ID: ", this.user_id);
     },
     data () {
         return {
@@ -124,38 +125,38 @@ export default {
     }, 
 
     methods: {
-    async checkAttendance() {
-    try {
-      var config = {
-        method: 'get',
-        headers: {
-            'Access-Control-Allow-Origin': 'http://localhost:5173'},
-        url: 'http://10.63.24.243:8080/activity/get/1120209999'
-      };
+      async checkAttendance() {
+        try {
+          var config = {
+            method: 'get',
+            headers: {
+                'Access-Control-Allow-Origin': 'http://localhost:5173'},
+            url: 'http://10.63.24.243:8080/activity/get/1120209999'
+          };
 
-      const response = await axios(config);
-      this.response = response.data;
-      console.log(JSON.stringify(response.data));
-      console.log(this.start_time)
-    }
-    catch (error) {
-      console.error('There was an error!', error);
-      this.response = 'Error: ' + error.message;
-    }
-  },
-  },
-  computed: {
-        formattedTime () {
-            const date = new Date(this.currentTime)
-            const year = date.getFullYear()
-            const month = date.getMonth() + 1
-            const day = date.getDate()
-            const hour = date.getHours()
-            const minute = date.getMinutes()
-            const second = date.getSeconds()
-            return `${year}-${month}-${day}`
+          const response = await axios(config);
+          this.response = response.data;
+          console.log(JSON.stringify(response.data));
+          console.log(this.start_time)
         }
-    }
+        catch (error) {
+          console.error('There was an error!', error);
+          this.response = 'Error: ' + error.message;
+        }
+      },
+    },
+    computed: {
+          formattedTime () {
+              const date = new Date(this.currentTime)
+              const year = date.getFullYear()
+              const month = date.getMonth() + 1
+              const day = date.getDate()
+              const hour = date.getHours()
+              const minute = date.getMinutes()
+              const second = date.getSeconds()
+              return `${year}-${month}-${day}`
+          }
+      }
 }
 
 

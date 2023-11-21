@@ -1,26 +1,28 @@
 <template>
   <div style="height: 100%;">
-    <el-container>
-      <el-header class="title">签到系统</el-header>
+    <el-container class="contain">
+      <el-header class="title">
+        <h2>签到系统</h2>
+      </el-header>
       <el-container>
-        <el-aside width="20%">
+        <el-aside width="20%" class="el-aside">
           <el-menu
             default-active="login_page"
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @select="changeSide"
           >
-            <el-menu-item index="login_page">
+            <el-menu-item index="login_page" class="item">
               <span>登录</span>
             </el-menu-item>
-            <el-menu-item index="schedule">
+            <el-menu-item index="schedule" class="item">
               <span>查看日程</span>
             </el-menu-item>
-            <el-menu-item index="create_activity">
+            <el-menu-item index="create_activity" class="item">
               <span>活动创建</span>
             </el-menu-item>
-            <el-sub-menu index="rate">
-              <template #title>
+            <el-sub-menu>
+              <template #title class="item">
                 <span>签到率分析</span>
               </template>
               <el-menu-item index="course_rate">
@@ -32,78 +34,39 @@
             </el-sub-menu>
           </el-menu>
         </el-aside>
-        <el-main>
+        <el-main class="el-main">
           <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
   </div>
-      
-
-    <!-- <h2 class="head">
-        我的日程 11月14号
-    </h2> -->
-
-    <!-- <h3>ID= {{ user_id }}</h3>
-    <router-link :to="{path:'/login_page'}">
-        <el-button type="success" class="button1">登录</el-button>
-    </router-link> -->
-
-    <!-- <el-card class="box-card">
-        <template #header>
-            <div class="card-header">
-                <span class="title">日程1</span>
-            </div>
-        </template>
-        <div class="text item">{{ '时间：8:00 ' }}</div>
-        <div class="text item">{{ '教室：中教101 ' }}</div>
-    </el-card>
-
-    <el-card class="box-card">
-    <template #header>
-      <div class="card-header">
-        <span class="title">日程2</span>
-      </div>
-    </template>
-    <div class="text item">{{ '时间：2:00 ' }}</div>
-    <div class="text item">{{ '教室：中教301 ' }}</div>
-  </el-card>
-
-    <el-card class="box-card">
-    <template #header>
-      <div class="card-header">
-        <span class="title">日程3</span>
-      </div>
-    </template>
-    <div class="text item">{{ '时间：18:00 ' }}</div>
-    <div class="text item">{{ '教室：3号楼301 ' }}</div>
-  </el-card> -->
-
-    <!-- <router-link :to="{path:'/create_activity',query:{user_id:this.user_id}}">
-        <el-button type="success" class="button1">活动申请</el-button>
-    </router-link>
-  </div>
-  <div class="button-container">
-    <router-link :to="{path:'/rate', query: {user_id: user_id}}">
-      <el-button type="success">出勤率</el-button>
-    </router-link>
-
-    <router-link :to="{path:'/history',query:{user_id:this.user_id}}">
-        <el-button type="success" class="button1">历史日程</el-button>
-    </router-link>
-    <router-link :to="{path:'/schedule',query:{user_id:this.user_id}}">
-        <el-button type="success" class="button1">日程查询</el-button>
-    </router-link> -->
-
-  <!-- </div>
-  <div class="button-container">
-    <el-button @click="closeWindow" type="success">退出</el-button> -->
-    <!-- 加个关闭页面的功能 -->
-  <!-- </div> -->
 </template>
 
-
 <style> 
+.title {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 0px;
+}
+
+.el-aside {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  bottom: 0;
+}
+
+.el-main {
+  position: absolute;
+  width: 80%;
+  left: 20%;
+  top: 60px;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
 .head {
   margin-top: 40px;
   text-align-last: center;
@@ -145,7 +108,8 @@
 }
 
 .title {
-  font-size: large;
+  font-size: larger;
+  font-weight: bolder;
   text-align: left;
 }
 

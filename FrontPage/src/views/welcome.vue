@@ -1,13 +1,35 @@
 <template>
-    <h2>
-        签到系统
-    </h2>
-    <h2>
-        Welcome
-    </h2>
+    <div class="welcome">
+        <h3>
+            {{  this.user_id }}
+        </h3>
+        <h3>
+            Welcome
+        </h3>
+    </div>
 </template>
 
+<style>
+.welcome {
+    position: relative;
+    top: 10%;
+    text-align: center;
+    font-size: xx-large;
+}
+</style>
 
-<script setup>
-    
+<script>
+    export default {
+    setup() {
+    },
+    created() {
+        this.user_id = this.$route.query.user_id;
+        console.error("User_ID: ", this.user_id);
+    },
+    data() {
+        return {
+            user_id: this.user_id,
+        }
+    },
+}
 </script>

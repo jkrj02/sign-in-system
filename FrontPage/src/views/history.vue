@@ -1,7 +1,10 @@
 <template>
-  <h2 class="head">
+  <router-link to='/schedule'>
+    <el-button type="success" :icon="ArrowLeft" class="return">返回</el-button>
+  </router-link>
+  <h3 class="head">
     历史日程
-  </h2>
+  </h3>
     <!-- <h3>ID= {{ user_id }}</h3> -->
   <div class="demo-collapse">
     <el-collapse>
@@ -44,28 +47,29 @@
         <div class="text">{{  '地点：8号教学楼1003' }}</div>
       </el-collapse-item>
       
-      <router-link to='/'>
-    <el-button type="success" :icon="ArrowLeft" class="return">返回</el-button>
-  </router-link>
+
     </el-collapse>
   </div>
 </template>
 
 <style>
 .return {
-  margin-left: 400px;
-  margin-top: 20px;
+  margin-left: 25%;
 }
 .demo-collapse {
-  margin-left: 400px;
+  margin-left: 25%;
+  margin-top: 5%;
+  text-align: center;
+  width: 50%;
+  /* margin-left: 400px;
   margin-right: 400px;
-  margin-top: 40px;
+  margin-top: 40px; */
 }
 .icon {
   margin-left: 20px;
 }
 .head {
-  margin-top: 20px;
+  margin-top: 10%;
   text-align-last: center;
 }
 .title {
@@ -88,6 +92,7 @@
 <script>
 
 import {Finished, ArrowLeft, Check, Close} from "@element-plus/icons-vue";
+import axios from 'axios'
 
 export default {
     computed: {
@@ -100,11 +105,28 @@ export default {
     },
     created() {
         this.user_id = this.$route.query.user_id;
+        console.error("User_ID: ", this.user_id);
+        this.checkHistory();
     },
-    data() {
-        return {
-            user_id: '',
+    methods: {
+      async checkHistory() {
+        try {
+          var config = {
+            method: 'get',
+            headers: {
+                'Access-Control-Allow-Origin': 'http://localhost:5173'},
+            url: 'http://10.63.110.16:8080/activity/get/1120208888',
+          };
+
+          const response = await axios(config);
+          this.response = response.data;
+          console.log(JSON.stringify(response.data));
         }
+        catch (error) {
+          console.error('There was an error!', error);
+          this.response = 'Error: ' + error.message;
+        }
+      },
     }
 }
 
