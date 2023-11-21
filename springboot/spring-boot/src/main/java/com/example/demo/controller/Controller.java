@@ -14,6 +14,7 @@ import javax.persistence.Query;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 //主程序
 @CrossOrigin
@@ -127,17 +128,62 @@ public class Controller {
         return leaveService.addLeave(a);
     }
     @GetMapping("student/add")
-    public Object stuadd()
-    {
-        Student a=new Student();
+    public Object stuadd() {//添加学生
+        int i = 1120200001;
+        while (i <= 1120200030)
+        {Student a = new Student();
         a.setCollege("计算机");
         a.setGender(false);
         a.setGrade("大一");
         a.setName("小明");
         a.setMajor("计算机");
-        a.setStudentId(1120201198);
-        return studentService.addStudent(a);
+        a.setStudentId(i);
+        i++;
+        studentService.addStudent(a);
+        }
+        return  true;
     }
+    @GetMapping("signin/add1/{id}")//为活动添加签到表
+    public Object signinbeginadd(@PathVariable int id) {
+        int i = 1120200001;
+        if(signinService.find(id,1120200001)==false)
+            return false;
+
+        while (i <= 1120200030) {
+
+            Signin a = new Signin();
+            a.setId(0);
+            a.setActivityId(id);
+            a.setUserId(i);
+            a.setSignin("待签到");
+            i++;
+            signinService.addSignin(a);
+        }
+        return  true;
+    }
+    @GetMapping("signin/add2/{id}")//为活动添加签到表
+    public Object signinadd(@PathVariable int id) {
+        int i = 1120200001;
+        Random random=new Random(10);
+        while (i <= 1120200030) {
+            Signin a = new Signin();
+            a.setId(0);
+            a.setActivityId(id);
+            a.setUserId(i);
+            i++;
+           int t=random.nextInt(10);
+             if(t<5)
+              a.setSignin("已签到");
+             else if(t>8)
+                 a.setSignin("未签到");
+             else
+                 a.setSignin("迟到");
+            signinService.addSignin(a);
+        }
+        return  true;
+    }
+
+
     @PostMapping("student/test")
     public Object stutest(@RequestBody Student a)
     {

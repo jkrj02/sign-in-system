@@ -21,6 +21,10 @@ public class SigninService {
     public Iterable<Signin> getAllSignIns(){
         return  repository.findAll();
     }
-
-
+     public  Boolean find(int aid,int uid) {
+        if(repository.findByActivityIdAndUserId(aid,uid)==null)
+          return   true;
+      else
+          return false;
+    }
 }

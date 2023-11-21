@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 //数据库类
 @Repository
 public interface SigninRepository extends CrudRepository<Signin, Integer> {
-
+    Signin findByActivityIdAndUserId (int activityId,int userId);
 }
