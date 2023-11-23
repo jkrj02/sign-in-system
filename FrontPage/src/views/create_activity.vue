@@ -1,90 +1,92 @@
 <template>
-    <h2 class="head">
+    <h3 class="head">
         创建临时活动
-    </h2>
-    <h3>ID= {{ user_id }}</h3>
+    </h3>
+    <!-- <h3>ID= {{ user_id }}</h3> -->
 
-    <!--    起止时间选择器-->
-    <el-row class="el-row">
-        <el-col class="el-col" :span="4">
-            <div class="grid-content ep-bg-purple"/>
-        </el-col>
-        <el-col class="el-col" :span="2">
-            <el-text class="line_head"> 起止时间：</el-text>
-        </el-col>
-        <el-col class="el-col" :span="14">
-            <div class="block">
-                <el-date-picker
-                    v-model="activity_time_range"
-                    type="datetimerange"
-                    value-format="YYYY/MM/DD/hh:mm:ss"
-                    range-separator="To"
-                    start-placeholder="Start date"
-                    end-placeholder="End date"
+    <div class="chooser">
+        <!--    起止时间选择器-->
+        <el-row class="el-row">
+            <el-col class="el-col" :span="4">
+                <div class="grid-content ep-bg-purple"/>
+            </el-col>
+            <el-col class="el-col" :span="2">
+                <el-text class="line_head"> 起止时间：</el-text>
+            </el-col>
+            <el-col class="el-col" :span="14">
+                <div class="block">
+                    <el-date-picker
+                        v-model="activity_time_range"
+                        type="datetimerange"
+                        value-format="YYYY/MM/DD/HH:mm:ss"
+                        range-separator="To"
+                        start-placeholder="Start date"
+                        end-placeholder="End date"
+                    />
+                </div>
+            </el-col>
+            <el-col class="el-col" :span="4">
+                <div class="grid-content ep-bg-purple-light"/>
+            </el-col>
+        </el-row>
+
+
+        <!--教室选择-->
+        <el-row class="el-row">
+            <el-col class="el-col" :span="4">
+                <div class="grid-content ep-bg-purple"/>
+            </el-col>
+            <el-col class="el-col" :span="2">
+                <el-text class="line_head"> 活动教室：</el-text>
+            </el-col>
+            <el-col class="el-col" :span="14">
+                <el-cascader
+                    v-model="selected_room"
+                    :options="room_list"
+                    :props="room_selector_props"
+
                 />
-            </div>
-        </el-col>
-        <el-col class="el-col" :span="4">
-            <div class="grid-content ep-bg-purple-light"/>
-        </el-col>
-    </el-row>
-
-
-    <!--教室选择-->
-    <el-row class="el-row">
-        <el-col class="el-col" :span="4">
-            <div class="grid-content ep-bg-purple"/>
-        </el-col>
-        <el-col class="el-col" :span="2">
-            <el-text class="line_head"> 活动教室：</el-text>
-        </el-col>
-        <el-col class="el-col" :span="14">
-            <el-cascader
-                v-model="selected_room"
-                :options="room_list"
-                :props="room_selector_props"
-
-            />
-        </el-col>
-        <el-col class="el-col" :span="4">
-            <div class="grid-content ep-bg-purple-light"/>
-        </el-col>
-    </el-row>
-    <!--活动名称-->
-    <el-row class="el-row">
-        <el-col class="el-col" :span="4">
-            <div class="grid-content ep-bg-purple"/>
-        </el-col>
-        <el-col class="el-col" :span="2">
-            <el-text class="line_head"> 活动名称：</el-text>
-        </el-col>
-        <el-col class="el-col" :span="14">
-            <el-input
-                v-model="activity_name"
-            />
-        </el-col>
-        <el-col class="el-col" :span="4">
-            <div class="grid-content ep-bg-purple-light"/>
-        </el-col>
-    </el-row>
-    <el-row class="el-row">
-        <el-col class="el-col" :span="4">
-            <div class="grid-content ep-bg-purple"/>
-        </el-col>
-        <el-col class="el-col" :span="4">
-            <el-button type="danger" @click="cancelSubmit">取消</el-button>
-        </el-col>
-        <el-col class="el-col" :span="8">
-            <div class="grid-content ep-bg-purple"/>
-<!--            <el-button type="danger" @click="test">test{{ infos }}</el-button>-->
-        </el-col>
-        <el-col class="el-col" :span="4">
-            <el-button type="primary" @click="submitActivity">提交</el-button>
-        </el-col>
-        <el-col class="el-col" :span="4">
-            <div class="grid-content ep-bg-purple-light"/>
-        </el-col>
-    </el-row>
+            </el-col>
+            <el-col class="el-col" :span="4">
+                <div class="grid-content ep-bg-purple-light"/>
+            </el-col>
+        </el-row>
+        <!--活动名称-->
+        <el-row class="el-row">
+            <el-col class="el-col" :span="4">
+                <div class="grid-content ep-bg-purple"/>
+            </el-col>
+            <el-col class="el-col" :span="2">
+                <el-text class="line_head"> 活动名称：</el-text>
+            </el-col>
+            <el-col class="el-col" :span="14">
+                <el-input
+                    v-model="activity_name"
+                />
+            </el-col>
+            <el-col class="el-col" :span="4">
+                <div class="grid-content ep-bg-purple-light"/>
+            </el-col>
+        </el-row>
+        <el-row class="el-row">
+            <el-col class="el-col" :span="4">
+                <div class="grid-content ep-bg-purple"/>
+            </el-col>
+            <el-col class="el-col" :span="4">
+                <el-button type="danger" @click="cancelSubmit">取消</el-button>
+            </el-col>
+            <el-col class="el-col" :span="8">
+                <div class="grid-content ep-bg-purple"/>
+    <!--            <el-button type="danger" @click="test">test{{ infos }}</el-button>-->
+            </el-col>
+            <el-col class="el-col" :span="4">
+                <el-button type="primary" @click="submitActivity">提交</el-button>
+            </el-col>
+            <el-col class="el-col" :span="4">
+                <div class="grid-content ep-bg-purple-light"/>
+            </el-col>
+        </el-row>
+    </div>
 
     <el-text>{{ TestLogs }}</el-text>   <!--调试用输出显示-->
 
@@ -103,6 +105,10 @@
 
 .el-row {
     margin-bottom: 20px;
+}
+
+.chooser {
+    margin-top: 5%;
 }
 
 .el-row:last-child {
@@ -124,6 +130,7 @@
 
 import axios from "axios";
 import global from "./global.vue";
+import { ElMessageBox } from 'element-plus'
 
 export default {
 
@@ -144,11 +151,11 @@ export default {
                                 children: [
                                     {
                                         value: 'room401',
-                                        label: '401',
+                                        label: '4003',
                                     },
                                     {
                                         value: 'room402',
-                                        label: '402',
+                                        label: '4005',
                                     },
                                 ]
                             },
@@ -305,7 +312,7 @@ export default {
             activity_time_range: [Date, Date],
             selected_room: [],
             activity_name: "",
-            TestLogs: "123",
+            TestLogs: "",
             user_id: '',
             activity_info: {
                 "activityId": 0,
@@ -315,7 +322,7 @@ export default {
                 "time": "2023/11/15/9:00",
                 "endTime": "2023/11/17/12:00",
                 "classroomId": 9,
-                "approved": "已审批"
+                "approved": "已通过"
             }
 
         }
@@ -323,7 +330,7 @@ export default {
     methods:
         {
             async submitActivity() {
-                this.TestLogs = "用户ID：" + this.user_id + "活动名称：" + this.activity_name + " 选择教室：" + this.selected_room + " 活动时间：" + this.activity_time_range
+                // this.TestLogs = "用户ID：" + this.user_id + "活动名称：" + this.activity_name + " 选择教室：" + this.selected_room + " 活动时间：" + this.activity_time_range
                 console.log(this.TestLogs)
 
                 this.setInfo()
@@ -349,7 +356,7 @@ export default {
                 // }
 
                 var data = JSON.stringify(this.activity_info)
-                this.TestLogs = 'sending' + JSON.stringify(this.activity_info)
+                // this.TestLogs = 'sending' + JSON.stringify(this.activity_info)
                 let responseLog;
                 let responseJSON;
 
@@ -380,10 +387,13 @@ export default {
                     .catch(function (error) {
                         console.log(error);
                     });
-                this.TestLogs = 'success!';
+                // this.TestLogs = 'success!';
 
-                this.TestLogs = 'success!' + JSON.stringify(responseLog);
+                // this.TestLogs = 'success!' + JSON.stringify(responseLog);
 //TODO 服务器返回的JSON能在控制台log里看到，却不能显示出来？
+                ElMessageBox.alert('提交成功！', 'Success', {
+                    confirmButtonText: 'OK'
+                })
             },
 
             test() {
@@ -394,7 +404,7 @@ export default {
             setInfo() {
                 this.activity_info.organizerId = +this.user_id;
                 this.activity_info.name = this.activity_name;
-                this.activity_info.classroomId = 0;//TODO 暂时写死了
+                this.activity_info.classroomId = 1;//TODO 暂时写死了
                 this.activity_info.time = this.activity_time_range[0];
                 this.activity_info.endTime = this.activity_time_range[1];
             },

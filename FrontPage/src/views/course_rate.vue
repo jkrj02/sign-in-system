@@ -1,11 +1,11 @@
 <template>
-  <h2 class="head">
+  <h3 class="head">
       课程出勤率查询
-  </h2>
-  <div class="button-container">
+  </h3>
+  <div class="time-container">
     <el-date-picker v-model="start_time" value-format="YYYY/MM/DD/HH:mm" type="datetime" placeholder="Start date" @change="getBirthDate"></el-date-picker>
   </div>
-  <div class="button-container">
+  <div class="time-container">
     <el-date-picker v-model="end_time" value-format="YYYY/MM/DD/HH:mm" type="datetime" placeholder="End date" @change="getBirthDate"></el-date-picker>
   </div>
   
@@ -36,9 +36,18 @@
 <style>
 .head {
   text-align-last: center;
+  margin-bottom: 3%;
 }
 
 .button-container {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.time-container {
   display: flex;
   justify-content: center;
   width: 100%;

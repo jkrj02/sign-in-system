@@ -20,6 +20,7 @@
       <div class="text item">{{ '开始时间： '+item.time }}</div>
       <div class="text item">{{ '结束时间： '+item.endTime }}</div>
       <div class="text item" v-if="item.classroomId === 0">{{  '地点：3号教学楼301' }}</div>
+      <div class="text item" v-if="item.classroomId === 1">{{  '地点：8号教学楼4003' }}</div>
       <div class="text item" v-if="item.classroomId === 2">{{  '地点：8号教学楼1003' }}</div>
     
       </el-card>

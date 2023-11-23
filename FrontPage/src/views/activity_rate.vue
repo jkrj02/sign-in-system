@@ -66,7 +66,7 @@ export default {
             text: '活动签到率',
             left: 'center',
             textStyle: {
-              fontSize: 30
+              fontSize: 20
             }
           },
           tooltip: {
