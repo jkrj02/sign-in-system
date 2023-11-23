@@ -76,7 +76,7 @@
         </el-col>
         <el-col class="el-col" :span="8">
             <div class="grid-content ep-bg-purple"/>
-            <el-button type="danger" @click="test">test{{ infos }}</el-button>
+<!--            <el-button type="danger" @click="test">test{{ infos }}</el-button>-->
         </el-col>
         <el-col class="el-col" :span="4">
             <el-button type="primary" @click="submitActivity">提交</el-button>
@@ -123,6 +123,7 @@
 <script lang="ts">
 
 import axios from "axios";
+import global from "./global.vue";
 
 export default {
 
@@ -355,13 +356,13 @@ export default {
                 let responseData;
                 var config = {
                     method: 'post',
-                    url: 'http://10.63.110.16:8080/activity/add',
+                    url: global.httpUrl + 'activity/add',//TODO 未测试
                     headers: {
                         'Access-Control-Allow-Origin': 'http://localhost:5173',
                         // 'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
                         'Content-Type': 'application/json',
                         'Accept': '*/*',
-                        'Host': '10.63.110.16:8080',
+                        'Host': '10.62.63.139:8080',
                         'Connection': 'keep-alive'
                     },
                     data: data
@@ -379,7 +380,9 @@ export default {
                     .catch(function (error) {
                         console.log(error);
                     });
-                this.TestLogs = 'success!' + responseLog;
+                this.TestLogs = 'success!';
+
+                this.TestLogs = 'success!' + JSON.stringify(responseLog);
 //TODO 服务器返回的JSON能在控制台log里看到，却不能显示出来？
             },
 
