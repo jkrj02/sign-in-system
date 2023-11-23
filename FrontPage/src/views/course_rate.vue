@@ -31,9 +31,6 @@
   <div class="button-container">
     <el-button @click="checkAttendance" type="success">查询</el-button>
   </div>
-  <div class="button-container">
-    <el-button @click="returnRate" type="success">返回</el-button>
-  </div>
 </template>
 
 <style>
@@ -105,9 +102,6 @@ methods: {
       console.error('There was an error!', error);
       this.response = 'Error: ' + error.message;
     }
-  },
-  returnRate() {
-    this.$router.go(-1)// 返回上一步
   },
 }
 };

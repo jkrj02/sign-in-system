@@ -19,3 +19,4 @@ spring:
             allowedOrigins: "http://10.62.132.160:5173"
             allowedMethods:
               - GET
+              - POST
