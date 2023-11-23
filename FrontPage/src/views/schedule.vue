@@ -1,68 +1,30 @@
 <template>
-    <h3 class="head">
-        我的课程 
-    </h3>
     <!-- <h3 class="head">我的ID： {{ user_id }}</h3>
     <router-link :to="{path:'/login_page'}">
         <el-button type="success" class="button1">登录</el-button>
     </router-link> -->
     <h3 class="head">{{ formattedTime1 }}</h3>
 
-    <el-card class="box-card">
-        <template #header>
-            <div class="card-header">
-                <span class="title">课程1</span>
-            </div>
-        </template>
-        <div class="text item">{{ '开始时间：8:00 ' }}</div>
-        <div class="text item">{{ '结束时间：10:00 ' }}</div>
-        <div class="text item">{{ '教室：中教101 ' }}</div>
-    </el-card>
-
-    <el-card class="box-card">
-    <template #header>
-      <div class="card-header">
-        <span class="title">课程2</span>
-      </div>
-    </template>
-    <div class="text item">{{ '开始时间：14:00 ' }}</div>
-    <div class="text item">{{ '结束时间：16:00 ' }}</div>
-    <div class="text item">{{ '教室：中教301 ' }}</div>
-  </el-card>
-
   <h3 class="head">
         我的活动 
     </h3>
-    <el-card class="box-card">
-    <template #header>
-      <div class="card-header">
-        <span class="title">活动1</span>
-      </div>
-    </template>
-    <div class="text item">{{ '开始时间：18:00 ' }}</div>
-    <div class="text item">{{ '结束时间：20:00 ' }}</div>
-    <div class="text item">{{ '教室：3号楼301 ' }}</div>
-  </el-card>
 
-  <div v-if="response">
+  <div  v-if="start">
     <div v-for="(item, index) in response" :key="index" >
-    <el-card v-if="item.endTime >= nowTime" class="box-card">
-      <template #header>
-      <div class="card-header">
-        <span class="title">{{item.type}}</span>
-      </div>
-    </template>
-    <div class="text item">{{ '开始时间： '+item.time }}</div>
-    <div class="text item">{{ '结束时间： '+item.endTime }}</div>
-    <div class="text item">{{ '教室： 中教601' }}</div>
-  
-    </el-card>
+      <el-card v-if="item.endTime >= nowTime && item.approved === '已通过'" class="box-card">
+        <template #header>
+        <div class="card-header">
+          <span class="title">{{item.name}}</span>
+        </div>
+      </template>
+      <div class="text item">{{ '开始时间： '+item.time }}</div>
+      <div class="text item">{{ '结束时间： '+item.endTime }}</div>
+      <div class="text item" v-if="item.classroomId === 0">{{  '地点：3号教学楼301' }}</div>
+      <div class="text item" v-if="item.classroomId === 2">{{  '地点：8号教学楼1003' }}</div>
     
-  </div>
-  </div>
-
-  <div class="button-container">
-    <el-button @click="checkAttendance" type="success">查看更多</el-button>
+      </el-card>
+    
+    </div>
   </div>
 
     <router-link :to="{path:'/history',query:{user_id:this.user_id}}">
@@ -119,13 +81,15 @@ export default {
     created() {
         this.user_id = this.$route.query.user_id;
         console.error("User_ID: ", this.user_id);
+        this.checkAttendance();
     },
     data () {
         return {
           user_id: '',
           currentTime: new Date(),
           response: null,
-          nowTime: 0
+          nowTime: 0,
+          start: 0
         }
     }, 
 
@@ -144,6 +108,7 @@ export default {
           console.log(JSON.stringify(response.data));
           console.log(this.start_time);
           this.nowTime = this.formattedTime();
+          this.start += 1;
         }
         catch (error) {
           console.error('There was an error!', error);

@@ -1,5 +1,5 @@
 <template>
-  <router-link to='/schedule'>
+  <router-link :to="{path:'/schedule',query:{user_id:this.user_id}}">
     <el-button type="success" :icon="ArrowLeft" class="return">返回</el-button>
   </router-link>
   <h3 class="head">
@@ -8,7 +8,7 @@
     <!-- <h3>ID= {{ user_id }}</h3> -->
   <div class="demo-collapse" v-if="this.start">
     <el-collapse v-for="(item, index) in response" :key="index">
-      <el-collapse-item v-if="item.endTime < nowTime">
+      <el-collapse-item v-if="item.endTime < nowTime  && item.approved === '已通过'">
         <template #title>
           <div class="card-header">
             <span class="title">{{ item.name }}</span>
@@ -101,7 +101,7 @@ export default {
             method: 'get',
             headers: {
                 'Access-Control-Allow-Origin': 'http://localhost:5173'},
-            url: global.httpUrl + 'activity/get/1120209999',
+            url: global.httpUrl + 'activity/get/' + this.user_id,
           };
           const response = await axios(config);
           this.response = response.data;

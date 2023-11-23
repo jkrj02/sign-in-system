@@ -36,7 +36,8 @@ export default {
       response: null,
       attendencerate: 0,
       laterate: 0,
-      absencerate: 0
+      absencerate: 0,
+      user_id: ''
     };
   },
   methods: {
@@ -45,7 +46,7 @@ export default {
         var config = {
           method: 'get',
           headers: {'Access-Control-Allow-Origin': 'http://localhost:5173'},
-          url: global.httpUrl + 'myattendence/1120209999',
+          url: global.httpUrl + 'myattendence/' + this.user_id,
         };
 
         const response = await axios(config);
@@ -56,6 +57,7 @@ export default {
         console.log(JSON.stringify(response.data));
         // 指定图表的配置项和数据
         const myChart = echarts.init(this.$refs.chart);
+        // const data1 = this.attendencerate.toString();
         const data1 = this.attendencerate;
         const data2 = this.laterate;
         const data3 = this.absencerate;
@@ -107,6 +109,7 @@ export default {
     // },
   },
   mounted() {
+    this.user_id = this.$route.query.user_id;
     this.checkAttendance(); // 组件挂载后立即调用
   }
 }
